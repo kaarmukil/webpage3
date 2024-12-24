@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Elements</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #ffffff;
+            position: fixed;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background-color: #e3e6f0;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header .search-bar {
+            width: 400px;
+        }
+
+        .header input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .charts-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .chart-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .bar-chart, .pie-chart, .donut-chart {
+            height: 150px;
+            background: #f0f4f8;
+            border-radius: 8px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+        }
+
+        .filters button {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .filters button:hover {
+            background-color: #e3e6f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>DashStack</h2>
+        <ul>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Order Lists</a></li>
+            <li><a href="#">Product Stack</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">To-Do</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Invoice</a></li>
+            <li><a href="#">UI Elements</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Table</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <input class="search-bar" type="text" placeholder="Search">
+            <div class="user-info">Admin</div>
+        </div>
+
+        <div class="filters">
+            <button>Filter By</button>
+            <button>Charts</button>
+        </div>
+
+        <div class="charts-section">
+            <div class="chart-container">
+                
+                 <img src="a.png" alt="User">
+                
+            </div>
+
+            <div class="chart-container">
+                
+                <img src="b.png" alt="User">
+                
+            </div>
+
+            <div class="chart-container">
+                 <img src="c.png" alt="User">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
